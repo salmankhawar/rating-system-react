@@ -4,7 +4,7 @@ export default function Ratings({ ratingOptions, clicked }) {
       <h3>Please rate your experience</h3>
       <div className="rating">
         {ratingOptions.map((r, i) => (
-          <button key={i} onClick={(e) => clicked(e)}>
+          <button key={i} onClick={(e) => clicked(e, r)}>
             {r}
           </button>
         ))}
