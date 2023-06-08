@@ -8,7 +8,7 @@ function App() {
   const ratingOptions = [1, 2, 3, 4, 5]
   const clicked = async (e, value) => {
     setClick(true)
-    await axios.post('http://localhost:4000/results', {
+    await axios.post('https://rating-system-api.onrender.com:4000/results', {
       resultNumber: value,
     })
   }
