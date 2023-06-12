@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Ratings from './components/Ratings'
 import ThankYou from './components/ThankYou'
 import axios from 'axios'
+
 const API_URL = process.env.REACT_APP_API_URL
 
 function App() {
